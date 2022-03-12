@@ -37,6 +37,7 @@ body{
 }
 #emojipastageneratebutton:hover{
     background-color: #55ff90;
+    box-shadow: 0 0 25px -2px #55ff90;
     color: #ffffff;
     transition: all 150ms;
 }
