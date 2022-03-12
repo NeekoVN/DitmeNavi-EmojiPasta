@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmojiPasta</title>
+    <link rel="stylesheet" href="emojipasta.css">
+    <script src="jquery-min.js"></script>
+    <script>
+        function copyToClipboard(element) {
+            var $temp = $("<textarea>");
+            $("body").append($temp);
+            $temp.val($(element).html().trim().replace(/  +/g, ' ').replace('<span class="hashtag">', '').replace('<span class="karambit">', '').replace('</span>', '').replace(/<br\s*[\/]?>/gi, "")).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+    </script>
+</head>
+<body>
+    <h2>INPUT</h2>
+    <textarea id="emojipastainput" rows="10"></textarea>
+    <button id="emojipastageneratebutton" onclick="writeEmojipasta();">Generate</button>
+    <h2>OUTPUT</h2>
+    <div class="emoji-output" id="emoji-output" onclick="copyEmojiPasta('#emojipastaoutput'); copyToClipboard('#emojipastaoutput')">
+        <div id="emojipastaoutput"></div><br>
+        <h3 class="hidden-copy-text" id="hidden-copy-text">CLICK ON THE TEXT TO COPY</h3>
+    </div>
+    <script src="emoji-mappings.js"></script>
+    <script src="emojipasta.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body{
+    background-color:#f8f8f8;
+}
+#emojipastainput{
+    box-sizing: border-box;
+    display: flex;
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    width:60vw;
+    box-shadow: 0 0 25px -12px #333333;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #333333;
+    font-family: MontserratLight;
+    padding: 20px;
+    outline: none;
+    font-size: 14px;
+}
+#emojipastainput::-webkit-scrollbar{
+    display: none;
+}
+#emojipastageneratebutton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 30vw;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px -12px #333333;
+    font-family: MontserratBold;
+    color: #333333;
+    cursor: pointer;
+}
+#emojipastageneratebutton:hover{
+    background-color: #55ff90;
+    color: #ffffff;
+    transition: all 150ms;
+}
+#emojipastaoutput{
+    font-family: MontserratLight;
+    font-size: 14px;
+}
+@font-face {
+    font-family: MontserratLight;
+    src: url(Assets/Montserrat/Montserrat-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: MontserratBold;
+    src: url(Assets/Montserrat/Montserrat-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: MontserratRegular;
+    src: url(Assets/Montserrat/Montserrat-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+@font-face {
+	font-family: MontserratSemiBold;
+	src: url(Assets/Montserrat/Montserrat-SemiBold.ttf) format('truetype');
+	font-weight: 600;
+}
+@font-face {
+	font-family: MontserratExtraBold;
+	src: url(Assets/Montserrat/Montserrat-ExtraBold.ttf) format('truetype');
+	font-weight: 800;
+}
+@font-face {
+	font-family: MontserratExtraLight;
+	src: url(Assets/Montserrat/Montserrat-ExtraLight.ttf) format('truetype');
+	font-weight: 200;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    margin-right: 5px;
+}
+::-webkit-scrollbar-track{
+    background: #f8f8f8;
+}
+::-webkit-scrollbar-thumb{
+    background: #333333;
+    border-radius: 6px;
+    border: 3px solid #f8f8f8;
+}
+.emoji-output{
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px -12px #333333;
+    min-height: 20vh;
+    width: 60vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+}
+.emoji-output:hover{
+    background-color: #333333;
+    color: #ffffff;
+    transition: all 150ms;
+}
+h2{
+    font-family: MontserratExtraBold;
+    text-align: center;
+    font-size: 35px;
+    color: #333333;
+}
+.hidden-copy-text{
+    font-family: MontserratExtraBold;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+}
