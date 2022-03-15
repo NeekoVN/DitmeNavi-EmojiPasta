@@ -58,3 +58,8 @@ function copyEmojiPasta() {
         hiddenCopyText.innerHTML = "CLICK TO COPY";
     }, 1500);
 }
+var today = new Date();
+var time = today.getHours();
+if(time>17 || time<6){
+    document.body.classList.toggle("dark-mode");
+}
