@@ -1,5 +1,15 @@
+:root{
+	--background: #f8f8f8;
+	--text: #333333;
+	--accordion: #ffffff;
+}
+.dark-mode{
+	--background: #202020;
+	--text: #ffffff;
+	--accordion: #333333;
+}
 body{
-    background-color:#f8f8f8;
+    background-color:var(--background);
 }
 #emojipastainput{
     display: flex;
@@ -12,11 +22,12 @@ body{
     margin-right: auto;
     margin-bottom: 30px;
     margin-top: 30px;
-    color: #333333;
+    color: var(--text);
     font-family: MontserratLight;
     padding: 20px;
     outline: none;
     font-size: 14px;
+    background: var(--accordion);
 }
 #emojipastainput::-webkit-scrollbar{
     display: none;
@@ -29,16 +40,16 @@ body{
     width: 30vw;
     border: none;
     border-radius: 15px;
-    background-color: #ffffff;
+    background-color: var(--accordion);
     box-shadow: 0 0 25px -12px #333333;
     font-family: MontserratBold;
-    color: #333333;
+    color: var(--text);
     cursor: pointer;
 }
 #emojipastageneratebutton:hover{
     background-color: #55ff90;
     box-shadow: 0 0 25px -2px #55ff90;
-    color: #ffffff;
+    color: var(--accordion);
     transition: all 150ms;
 }
 #emojipastaoutput{
@@ -80,15 +91,15 @@ body{
     margin-right: 5px;
 }
 ::-webkit-scrollbar-track{
-    background: #f8f8f8;
+    background: var(--background);
 }
 ::-webkit-scrollbar-thumb{
-    background: #333333;
+    background: var(--text);
     border-radius: 6px;
-    border: 3px solid #f8f8f8;
+    border: 3px solid var(--background);
 }
 .emoji-output{
-    background-color: #ffffff;
+    background-color: var(--accordion);
     box-shadow: 0 0 25px -12px #333333, inset 0 0 15px 0px #ffffff00;
     min-height: 20vh;
     width: 50vw;
@@ -108,7 +119,7 @@ body{
     transition: all 150ms;
 }
 .emoji-output h3{
-    color: #ffffff;
+    color: var(--accordion);
     transition: all 150ms;
 }
 .emoji-output:hover h3{
@@ -119,11 +130,11 @@ h2{
     font-family: MontserratExtraBold;
     text-align: center;
     font-size: 35px;
-    color: #333333;
+    color: var(--text);
 }
 .hidden-copy-text{
     font-family: MontserratExtraBold;
     font-size: 25px;
-    color: #ffffff;
+    color: var(--accordion);
     text-align: center;
 }
