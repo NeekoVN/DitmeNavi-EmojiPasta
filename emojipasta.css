@@ -55,6 +55,7 @@ body{
 #emojipastaoutput{
     font-family: MontserratLight;
     font-size: 14px;
+    color: var(--text);
 }
 @font-face {
     font-family: MontserratLight;
